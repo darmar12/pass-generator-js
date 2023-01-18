@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password generator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="generator__container">
+            <h2 class="generator__title">Password generator</h2>
+            <div class="generator__content">
+                <div class="generator__output">
+                    <input type="text" disabled>
+                    <img src="copy.svg" alt="Copy icon" class="generator__copy">
+                </div>
+                <div class="generator__indecator"></div>
+                <div class="generator__length--box">
+                    <div class="generator__length--content">
+                        <h3 class="generator__title--small">Password Length: </h3>
+                        <span></span>
+                    </div>
+                    <input type="range" min="1" max="30" value="8" step="1">
+                </div>
+                <div class="generator__setting">
+                    <h3 class="generator__title--small">Pass Settings</h3>
+                    <div class="generator__options">
+                        <div class="generator__option">
+                            <input class="generator__checkbox" type="checkbox" id="lowercase" checked>
+                            <label for="lowercase">Lowercase (a-z)</label>
+                        </div>
+
+                        <div class="generator__option">
+                            <input class="generator__checkbox" type="checkbox" id="uppercase" >
+                            <label for="uppercase">Uppercase (A-Z)</label>
+                        </div>
+
+                        <div class="generator__option">
+                            <input class="generator__checkbox" type="checkbox" id="numbers">
+                            <label for="numbers">Numbers (0-9)</label>
+                        </div>
+
+                        <div class="generator__option">
+                            <input class="generator__checkbox" type="checkbox" id="symbols">
+                            <label for="symbols">Symbols (!-$^+)</label>
+                        </div>
+
+                        <div class="generator__option">
+                            <input class="generator__checkbox" type="checkbox" id="excDuplicate">
+                            <label for="excDuplicate">Exclude Duplicate</label>
+                        </div>
+
+                        <div class="generator__option">
+                            <input class="generator__checkbox" type="checkbox" id="incSpaces">
+                            <label for="incSpaces">Include Spaces</label>
+                        </div>
+                    </div>
+                </div>
+                <button class="generator__btn" id="generate">Generate Password</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
